@@ -1,0 +1,2 @@
+control
+-DCATKIN_DEVEL_PREFIX=/home/akshitk/Documents/ID4100/gripper_control/devel -DCMAKE_INSTALL_PREFIX=/home/akshitk/Documents/ID4100/gripper_control/install -G Unix Makefiles

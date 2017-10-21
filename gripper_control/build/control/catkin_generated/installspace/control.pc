@@ -1,0 +1,8 @@
+prefix=/home/akshitk/Documents/ID4100/gripper_control/install
+
+Name: control
+Description: Description of control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/akshitk/Documents/ID4100/gripper_control/install/lib 
+Requires: 
