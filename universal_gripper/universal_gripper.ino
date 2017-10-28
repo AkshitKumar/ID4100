@@ -1,6 +1,20 @@
 #include <WiFi.h>
 #include <ros.h>
 #include <std_msgs/String.h>
+#include <rover_msgs/WheelVelocity.h>
+
+#define dir_pin 7
+
+// use first channel of 16 channels (started from zero)
+#define LEDC_CHANNEL_0     0
+
+// use 13 bit precission for LEDC timer
+#define LEDC_TIMER_13_BIT  13
+
+// use 5000 Hz as a LEDC base frequency
+#define LEDC_BASE_FREQ     5000
+
+#define LED_PIN            5
 
 const char* ssid = "UniversalGripper";
 const char* password = "";
@@ -34,6 +48,38 @@ void setupWiFi(){
   printWiFiStatus();
 }
 
+uint32_t min(uint32_t x , uint32_t y){
+  if( x < y){
+    return x;
+  }
+  else{
+    return y;
+  }
+}
+
+void analogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255) {
+  // calculate duty, 8191 from 2 ^ 13 - 1
+  uint32_t duty = (8191 / valueMax) * min(value, valueMax);
+
+  // write duty to LEDC
+  ledcWrite(channel, duty);
+}
+
+void gripperCallback(const rover_msgs::WheelVelocity& gripperVel){
+    //Serial.println(gripperVel.left);
+    
+    if(gripperVel.left <= 0){
+      digitalWrite(18, LOW);
+      analogWrite(LEDC_CHANNEL_0, abs(gripperVel.left));
+    }
+    else{
+      digitalWrite(18, HIGH);
+      analogWrite(LEDC_CHANNEL_0, abs(gripperVel.left));
+    }
+    
+}
+
+ros::Subscriber<rover_msgs::WheelVelocity> gripper_control("gripper", &gripperCallback);
 
 void setup() {
   Serial.begin(115200);
@@ -41,12 +87,21 @@ void setup() {
   // TODO : Add the setupWifi code 
   nh.getHardware()->setConnection(server,serverPort);
   nh.initNode();
-  nh.advertise(chatter);
+  //nh.advertise(chatter);
+  nh.subscribe(gripper_control);
+
+  pinMode(18, OUTPUT);
+  pinMode(17, OUTPUT);
+  //pinMode(pwn_pin, OUTPUT);
+
+  ledcSetup(LEDC_CHANNEL_0, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT);
+  ledcAttachPin(LED_PIN, LEDC_CHANNEL_0);
+  digitalWrite(17,HIGH);
 }
 
 void loop() {
-  str_msg.data = hello;
-  chatter.publish(&str_msg);
+  //str_msg.data = hello;
+  //chatter.publish(&str_msg);
   nh.spinOnce();
   delay(1000);
 }
