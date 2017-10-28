@@ -1,0 +1,8 @@
+prefix=/home/akshitk/Documents/ID4100/gripper_control/install
+
+Name: rover_msgs
+Description: Description of rover_msgs
+Version: 0.0.0
+Cflags: -I/home/akshitk/Documents/ID4100/gripper_control/install/include
+Libs: -L/home/akshitk/Documents/ID4100/gripper_control/install/lib 
+Requires: 

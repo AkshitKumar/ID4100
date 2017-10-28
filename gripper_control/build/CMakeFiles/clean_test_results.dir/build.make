@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshitk/Documents/ID4100/gripper_control/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/home/akshitk/anaconda2/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/akshitk/Documents/ID4100/gripper_control/build/test_results
+	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/akshitk/Documents/ID4100/gripper_control/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

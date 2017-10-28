@@ -1,0 +1,33 @@
+(cl:defpackage rover_msgs-msg
+  (:use )
+  (:export
+   "<ARM>"
+   "ARM"
+   "<ARMANGLE>"
+   "ARMANGLE"
+   "<BATTERY_LEVEL>"
+   "BATTERY_LEVEL"
+   "<CAMERAMOTION>"
+   "CAMERAMOTION"
+   "<ENC>"
+   "ENC"
+   "<GPS>"
+   "GPS"
+   "<GRIPPERMOTION>"
+   "GRIPPERMOTION"
+   "<MPU>"
+   "MPU"
+   "<POWER>"
+   "POWER"
+   "<ROUTERANGLE>"
+   "ROUTERANGLE"
+   "<SC_TASK>"
+   "SC_TASK"
+   "<WHEELVELPOWER>"
+   "WHEELVELPOWER"
+   "<WHEELVELOCITY>"
+   "WHEELVELOCITY"
+   "<DIGGER>"
+   "DIGGER"
+  ))
+
