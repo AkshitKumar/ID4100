@@ -2,6 +2,7 @@
 #include <ros.h>
 #include <std_msgs/String.h>
 #include <rover_msgs/WheelVelocity.h>
+#include <rover_msgs/gripper.h>
 
 #define dir_pin 7
 
