@@ -1,10 +1,9 @@
 #include <WiFi.h>
 #include <ros.h>
 #include <std_msgs/String.h>
-//#include <rover_msgs/WheelVelocity.h>
 #include <rover_msgs/gripper.h>
 
-#define dir_pin 7
+// #define dir_pin 7
 
 // use first channel of 16 channels (started from zero)
 #define LEDC_CHANNEL_0     0
@@ -25,15 +24,10 @@ int status = WL_IDLE_STATUS;
 IPAddress server(192,168,0,100);
 const uint16_t serverPort = 11411;
 ros::NodeHandle nh;
-std_msgs::String str_msg;
-ros::Publisher chatter("chatter",&str_msg);
-
-char hello[13] = "hello world!";
 
 void printWiFiStatus(){
   Serial.print("SSID: ");
   Serial.println(WiFi.SSID());
-
   IPAddress ip = WiFi.localIP();
   Serial.print("IP Address: ");
   Serial.println(ip);
@@ -65,26 +59,6 @@ void analogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255) {
   ledcWrite(channel, duty);
 }
 
-/*
-void gripperCallback(const rover_msgs::WheelVelocity& gripperVel){
-    //Serial.println(gripperVel.left);
-    
-    if(gripperVel.left <= 0){
-      digitalWrite(18, LOW);
-      digitalWrite(16, HIGH);
-      analogWrite(LEDC_CHANNEL_0, abs(gripperVel.left));
-    }
-    else{
-      digitalWrite(18, HIGH);
-      digitalWrite(16, LOW);
-      analogWrite(LEDC_CHANNEL_0, abs(gripperVel.left));
-    }
-    
-}
-
-ros::Subscriber<rover_msgs::WheelVelocity> gripper_control("gripper", &gripperCallback);
-*/
-
 void gripperCallback(const rover_msgs::gripper& grip){
   if(grip.primary_act <= 0){
     digitalWrite(18, HIGH);
@@ -101,25 +75,19 @@ ros::Subscriber<rover_msgs::gripper> gripper_control("gripper", &gripperCallback
 void setup() {
   Serial.begin(115200);
   setupWiFi();
-  // TODO : Add the setupWifi code 
   nh.getHardware()->setConnection(server,serverPort);
   nh.initNode();
-  //nh.advertise(chatter);
   nh.subscribe(gripper_control);
-
   pinMode(18, OUTPUT);
   pinMode(17, OUTPUT);
-  pinMode(16, OUTPUT);
-  //pinMode(pwn_pin, OUTPUT);
-
+  // pinMode(16, OUTPUT);
+  
   ledcSetup(LEDC_CHANNEL_0, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT);
   ledcAttachPin(LED_PIN, LEDC_CHANNEL_0);
-  digitalWrite(17,HIGH);
+  digitalWrite(17,HIGH); // Set the Sleep of the Pololu Motor Driver to HIGH
 }
 
 void loop() {
-  //str_msg.data = hello;
-  //chatter.publish(&str_msg);
   nh.spinOnce();
   delay(1000);
 }
