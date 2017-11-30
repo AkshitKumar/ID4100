@@ -1,7 +1,7 @@
 #include <WiFi.h>
 #include <ros.h>
 #include <std_msgs/String.h>
-#include <rover_msgs/WheelVelocity.h>
+//#include <rover_msgs/WheelVelocity.h>
 #include <rover_msgs/gripper.h>
 
 #define dir_pin 7
@@ -65,6 +65,7 @@ void analogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255) {
   ledcWrite(channel, duty);
 }
 
+/*
 void gripperCallback(const rover_msgs::WheelVelocity& gripperVel){
     //Serial.println(gripperVel.left);
     
@@ -82,6 +83,20 @@ void gripperCallback(const rover_msgs::WheelVelocity& gripperVel){
 }
 
 ros::Subscriber<rover_msgs::WheelVelocity> gripper_control("gripper", &gripperCallback);
+*/
+
+void gripperCallback(const rover_msgs::gripper& grip){
+  if(grip.primary_act <= 0){
+    digitalWrite(18, HIGH);
+    analogWrite(LEDC_CHANNEL_0, abs(grip.primary_act));
+  }
+  else{
+    digitalWrite(18, LOW);
+    analogWrite(LEDC_CHANNEL_0, abs(grip.primary_act));
+  }
+}
+
+ros::Subscriber<rover_msgs::gripper> gripper_control("gripper", &gripperCallback);
 
 void setup() {
   Serial.begin(115200);
