@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/RouterAngle.l"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Battery_level.l"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/MPU.l"
+  "/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/gripper.l"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Arm.l"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/manifest.l"
 )

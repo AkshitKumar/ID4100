@@ -13,6 +13,7 @@ fd25109d73231c544d6c108734cd875a /home/akshitk/Documents/ID4100/gripper_control/
 4dbb4198539a80d231f4d17abdbe5f16 /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/WheelVelPower.h
 b1fd858a4cc76ea69198661163783d6f /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/WheelVelocity.h
 fd80a15d97c29231867957ab155ae7bd /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/digger.h
+27286ace6b1a92dcf18edb1e9db08ae5 /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h
 c3dee52a13c507e6afdbf574fcfef72c /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py
 74bd3d98640c277bcc8631ebd990716f /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_ArmAngle.py
 d947d546927dc384ec7c758ab0deb0a9 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Battery_level.py
@@ -28,6 +29,7 @@ b5b8ab0246f27c901eb937f281417236 /home/akshitk/Documents/ID4100/gripper_control/
 c48fb0aad747bc6318fe80f11f84bc13 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_WheelVelocity.py
 8ff37fddda44c6fd3c4010966579d906 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py
 4f110174339f1983cbae817a00d873b5 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_digger.py
+987e5b02691ce4ea84673b9559c85413 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py
 c46322c522b6fbb3f813de1b2888a120 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Arm.lisp
 142720e8e6a34d798edb93019d14a80a /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/ArmAngle.lisp
 8127e350cf765f59d364b5b65f8e61c2 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Battery_level.lisp
@@ -42,6 +44,7 @@ fdfb054f7a92a1f56ec08afbcc983dbb /home/akshitk/Documents/ID4100/gripper_control/
 84a2e0f34155e3308ec391b63e604a46 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/WheelVelPower.lisp
 e968ac874c6cbb6d1e889b03e1a90931 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/WheelVelocity.lisp
 05c48135e814958c5837577765098687 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/digger.lisp
+f59ee7c82f2c6ff7aec3794d75093913 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/gripper.lisp
 35ea4167c52815373bcd1896d2c0ff87 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Arm.js
 7fb0bae5324beec549558146f42361fb /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/ArmAngle.js
 b0973a722eccc2eda6a4acc0159bf0a7 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Battery_level.js
@@ -56,6 +59,7 @@ dedac2fc430967df61d54527aa3912b3 /home/akshitk/Documents/ID4100/gripper_control/
 5dc8473097e9683199f110ef4a4c75c1 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/WheelVelPower.js
 b1288a50e0999ca8e1225e88e0e8c41c /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/WheelVelocity.js
 b4f235287d4f9e5b5586916e504bf574 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/digger.js
+1ab11e8223dc84afed6a41eb2e3b9600 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/gripper.js
 738bdcbb649717692fb714e601233909 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/manifest.l
 46f182aa32a94df6417a911cbb70722d /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Arm.l
 f5345135d110011f378c874a1059ff22 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/ArmAngle.l
@@ -71,6 +75,7 @@ e477940188fd27139028f37ee3357ef3 /home/akshitk/Documents/ID4100/gripper_control/
 2101f3c5dfae382040f93a81f163e5e1 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/WheelVelPower.l
 01e97a45a97666715158c9ed37453dc5 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/WheelVelocity.l
 2b47aa3342dfef1d14ec985fd0bbff0a /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/digger.l
+56985b37df611c97188a56622e60eb43 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/gripper.l
 6008b221f8b72e81a68966d8751f9eb1 CMakeFiles/clean_test_results
 3af00194e282b8510ea5e37aae05f147 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_Arm
 24b28edaad4bf44ea3e4e5d9f2b59e83 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle
@@ -86,6 +91,7 @@ d718ef4c8c5acd1fe4986f438fd9a450 rover_msgs/CMakeFiles/_rover_msgs_generate_mess
 e7d805e8d835037bbc08a5716016199b rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_WheelVelPower
 5bced1188c5eb1d0c5566c7cd841a4f3 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_WheelVelocity
 5907dc19f0a887a74559d37f9f053869 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_digger
+529e4a58f786bfbb7f41b21cb0f6c9c9 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper
 b052a4ca92f5d7d4ee046550f33f0222 rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp
 b052a4ca92f5d7d4ee046550f33f0222 rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus
 b052a4ca92f5d7d4ee046550f33f0222 rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp

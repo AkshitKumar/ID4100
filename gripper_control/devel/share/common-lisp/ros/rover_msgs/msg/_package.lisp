@@ -29,5 +29,7 @@
    "WHEELVELOCITY"
    "<DIGGER>"
    "DIGGER"
+   "<GRIPPER>"
+   "GRIPPER"
   ))
 

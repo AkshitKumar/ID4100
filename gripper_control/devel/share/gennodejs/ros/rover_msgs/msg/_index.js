@@ -8,6 +8,7 @@ let WheelVelPower = require('./WheelVelPower.js');
 let Enc = require('./Enc.js');
 let GripperMotion = require('./GripperMotion.js');
 let WheelVelocity = require('./WheelVelocity.js');
+let gripper = require('./gripper.js');
 let CameraMotion = require('./CameraMotion.js');
 let Battery_level = require('./Battery_level.js');
 let SC_task = require('./SC_task.js');
@@ -24,6 +25,7 @@ module.exports = {
   Enc: Enc,
   GripperMotion: GripperMotion,
   WheelVelocity: WheelVelocity,
+  gripper: gripper,
   CameraMotion: CameraMotion,
   Battery_level: Battery_level,
   SC_task: SC_task,

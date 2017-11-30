@@ -66,6 +66,7 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/I
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_RouterAngle.py
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Battery_level.py
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_MPU.py
+rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py
 
@@ -137,9 +138,14 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/I
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python from MSG rover_msgs/MPU"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg
 
+/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python from MSG rover_msgs/gripper"
+	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg
+
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python from MSG rover_msgs/Arm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python from MSG rover_msgs/Arm"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg
 
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
@@ -156,8 +162,9 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_py: /home/akshitk/Documents/I
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_RouterAngle.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Battery_level.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_MPU.py
+/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python msg __init__.py for rover_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python msg __init__.py for rover_msgs"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg --initpy
 
 rover_msgs_generate_messages_py: rover_msgs/CMakeFiles/rover_msgs_generate_messages_py
@@ -174,6 +181,7 @@ rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/
 rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_RouterAngle.py
 rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Battery_level.py
 rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_MPU.py
+rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py
 rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py
 rover_msgs_generate_messages_py: /home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py
 rover_msgs_generate_messages_py: rover_msgs/CMakeFiles/rover_msgs_generate_messages_py.dir/build.make

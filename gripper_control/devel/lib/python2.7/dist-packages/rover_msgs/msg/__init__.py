@@ -12,3 +12,4 @@ from ._SC_task import *
 from ._WheelVelPower import *
 from ._WheelVelocity import *
 from ._digger import *
+from ._gripper import *

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "rover_msgs: 14 messages, 0 services")
+message(STATUS "rover_msgs: 15 messages, 0 services")
 
 set(MSG_I_FLAGS "-Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg")
 
@@ -80,6 +80,11 @@ add_custom_target(_rover_msgs_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" NAME_WE)
 add_custom_target(_rover_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rover_msgs" "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" "geometry_msgs/Quaternion:geometry_msgs/Vector3"
+)
+
+get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" NAME_WE)
+add_custom_target(_rover_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rover_msgs" "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" ""
 )
 
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg" NAME_WE)
@@ -172,6 +177,12 @@ _generate_msg_cpp(rover_msgs
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rover_msgs
 )
 _generate_msg_cpp(rover_msgs
+  "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rover_msgs
+)
+_generate_msg_cpp(rover_msgs
   "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -217,6 +228,8 @@ add_dependencies(rover_msgs_generate_messages_cpp _rover_msgs_generate_messages_
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Battery_level.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_cpp _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" NAME_WE)
+add_dependencies(rover_msgs_generate_messages_cpp _rover_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_cpp _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_cpp _rover_msgs_generate_messages_check_deps_${_filename})
@@ -309,6 +322,12 @@ _generate_msg_eus(rover_msgs
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rover_msgs
 )
 _generate_msg_eus(rover_msgs
+  "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/rover_msgs
+)
+_generate_msg_eus(rover_msgs
   "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -354,6 +373,8 @@ add_dependencies(rover_msgs_generate_messages_eus _rover_msgs_generate_messages_
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Battery_level.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_eus _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" NAME_WE)
+add_dependencies(rover_msgs_generate_messages_eus _rover_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_eus _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_eus _rover_msgs_generate_messages_check_deps_${_filename})
@@ -446,6 +467,12 @@ _generate_msg_lisp(rover_msgs
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rover_msgs
 )
 _generate_msg_lisp(rover_msgs
+  "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rover_msgs
+)
+_generate_msg_lisp(rover_msgs
   "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -491,6 +518,8 @@ add_dependencies(rover_msgs_generate_messages_lisp _rover_msgs_generate_messages
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Battery_level.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_lisp _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" NAME_WE)
+add_dependencies(rover_msgs_generate_messages_lisp _rover_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_lisp _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_lisp _rover_msgs_generate_messages_check_deps_${_filename})
@@ -583,6 +612,12 @@ _generate_msg_nodejs(rover_msgs
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rover_msgs
 )
 _generate_msg_nodejs(rover_msgs
+  "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/rover_msgs
+)
+_generate_msg_nodejs(rover_msgs
   "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -628,6 +663,8 @@ add_dependencies(rover_msgs_generate_messages_nodejs _rover_msgs_generate_messag
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Battery_level.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_nodejs _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" NAME_WE)
+add_dependencies(rover_msgs_generate_messages_nodejs _rover_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_nodejs _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_nodejs _rover_msgs_generate_messages_check_deps_${_filename})
@@ -720,6 +757,12 @@ _generate_msg_py(rover_msgs
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rover_msgs
 )
 _generate_msg_py(rover_msgs
+  "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rover_msgs
+)
+_generate_msg_py(rover_msgs
   "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -765,6 +808,8 @@ add_dependencies(rover_msgs_generate_messages_py _rover_msgs_generate_messages_c
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Battery_level.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_py _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg" NAME_WE)
+add_dependencies(rover_msgs_generate_messages_py _rover_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_py _rover_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg" NAME_WE)
 add_dependencies(rover_msgs_generate_messages_py _rover_msgs_generate_messages_check_deps_${_filename})

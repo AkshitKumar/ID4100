@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_RouterAngle.py"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Battery_level.py"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_MPU.py"
+  "/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_gripper.py"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/_Arm.py"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/lib/python2.7/dist-packages/rover_msgs/msg/__init__.py"
 )

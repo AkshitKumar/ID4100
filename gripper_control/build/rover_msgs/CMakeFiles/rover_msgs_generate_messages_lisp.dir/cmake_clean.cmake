@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/RouterAngle.lisp"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Battery_level.lisp"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/MPU.lisp"
+  "/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/gripper.lisp"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Arm.lisp"
 )
 

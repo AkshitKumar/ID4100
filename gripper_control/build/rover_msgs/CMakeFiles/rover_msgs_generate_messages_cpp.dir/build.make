@@ -66,6 +66,7 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/RouterAngle.h
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Battery_level.h
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/MPU.h
+rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Arm.h
 
 
@@ -149,10 +150,16 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp: /home/akshitk/Documents/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from rover_msgs/MPU.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg
+/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from rover_msgs/gripper.msg"
+	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Arm.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Arm.h: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg
 /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Arm.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from rover_msgs/Arm.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from rover_msgs/Arm.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 rover_msgs_generate_messages_cpp: rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp
@@ -169,6 +176,7 @@ rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control
 rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/RouterAngle.h
 rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Battery_level.h
 rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/MPU.h
+rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h
 rover_msgs_generate_messages_cpp: /home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Arm.h
 rover_msgs_generate_messages_cpp: rover_msgs/CMakeFiles/rover_msgs_generate_messages_cpp.dir/build.make
 

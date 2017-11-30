@@ -66,6 +66,7 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/RouterAngle.l
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Battery_level.l
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/MPU.l
+rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/gripper.l
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Arm.l
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/manifest.l
 
@@ -137,13 +138,18 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus: /home/akshitk/Documents/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating EusLisp code from rover_msgs/MPU.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg
 
+/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/gripper.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/gripper.l: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating EusLisp code from rover_msgs/gripper.msg"
+	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg
+
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Arm.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Arm.l: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating EusLisp code from rover_msgs/Arm.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating EusLisp code from rover_msgs/Arm.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg
 
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating EusLisp manifest code for rover_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating EusLisp manifest code for rover_msgs"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs rover_msgs std_msgs geometry_msgs sensor_msgs
 
 rover_msgs_generate_messages_eus: rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus
@@ -160,6 +166,7 @@ rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control
 rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/RouterAngle.l
 rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Battery_level.l
 rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/MPU.l
+rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/gripper.l
 rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/msg/Arm.l
 rover_msgs_generate_messages_eus: /home/akshitk/Documents/ID4100/gripper_control/devel/share/roseus/ros/rover_msgs/manifest.l
 rover_msgs_generate_messages_eus: rover_msgs/CMakeFiles/rover_msgs_generate_messages_eus.dir/build.make

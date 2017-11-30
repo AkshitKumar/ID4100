@@ -33,4 +33,6 @@
     (:file "_package_WheelVelocity" :depends-on ("_package"))
     (:file "digger" :depends-on ("_package_digger"))
     (:file "_package_digger" :depends-on ("_package"))
+    (:file "gripper" :depends-on ("_package_gripper"))
+    (:file "_package_gripper" :depends-on ("_package"))
   ))

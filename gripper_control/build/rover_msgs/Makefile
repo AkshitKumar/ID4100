@@ -78,17 +78,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -99,6 +88,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -301,21 +301,6 @@ geometry_msgs_generate_messages_nodejs/fast:
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule:
-	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f CMakeFiles/Makefile2 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule
-.PHONY : rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule
-
-# Convenience name for target.
-_rover_msgs_generate_messages_check_deps_ArmAngle: rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule
-
-.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle
-
-# fast build rule for target.
-_rover_msgs_generate_messages_check_deps_ArmAngle/fast:
-	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build.make rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build
-.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle/fast
-
-# Convenience name for target.
 rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
 	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f CMakeFiles/Makefile2 rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
@@ -329,6 +314,21 @@ std_msgs_generate_messages_lisp: rover_msgs/CMakeFiles/std_msgs_generate_message
 std_msgs_generate_messages_lisp/fast:
 	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule:
+	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f CMakeFiles/Makefile2 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule
+.PHONY : rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule
+
+# Convenience name for target.
+_rover_msgs_generate_messages_check_deps_ArmAngle: rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/rule
+
+.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle
+
+# fast build rule for target.
+_rover_msgs_generate_messages_check_deps_ArmAngle/fast:
+	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build.make rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build
+.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle/fast
 
 # Convenience name for target.
 rover_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
@@ -646,6 +646,21 @@ _rover_msgs_generate_messages_check_deps_MPU/fast:
 .PHONY : _rover_msgs_generate_messages_check_deps_MPU/fast
 
 # Convenience name for target.
+rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/rule:
+	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f CMakeFiles/Makefile2 rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/rule
+.PHONY : rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/rule
+
+# Convenience name for target.
+_rover_msgs_generate_messages_check_deps_gripper: rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/rule
+
+.PHONY : _rover_msgs_generate_messages_check_deps_gripper
+
+# fast build rule for target.
+_rover_msgs_generate_messages_check_deps_gripper/fast:
+	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/build.make rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/build
+.PHONY : _rover_msgs_generate_messages_check_deps_gripper/fast
+
+# Convenience name for target.
 rover_msgs/CMakeFiles/rover_msgs_gencpp.dir/rule:
 	cd /home/akshitk/Documents/ID4100/gripper_control/build && $(MAKE) -f CMakeFiles/Makefile2 rover_msgs/CMakeFiles/rover_msgs_gencpp.dir/rule
 .PHONY : rover_msgs/CMakeFiles/rover_msgs_gencpp.dir/rule
@@ -780,9 +795,9 @@ help:
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... _rover_msgs_generate_messages_check_deps_ArmAngle"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... install"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... _rover_msgs_generate_messages_check_deps_ArmAngle"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rover_msgs_generate_messages"
 	@echo "... list_install_components"
@@ -805,6 +820,8 @@ help:
 	@echo "... _rover_msgs_generate_messages_check_deps_WheelVelPower"
 	@echo "... rover_msgs_generate_messages_nodejs"
 	@echo "... _rover_msgs_generate_messages_check_deps_MPU"
+	@echo "... _rover_msgs_generate_messages_check_deps_gripper"
+	@echo "... install/strip"
 	@echo "... rover_msgs_gencpp"
 	@echo "... rover_msgs_generate_messages_eus"
 	@echo "... rover_msgs_genlisp"
@@ -813,7 +830,6 @@ help:
 	@echo "... _rover_msgs_generate_messages_check_deps_SC_task"
 	@echo "... edit_cache"
 	@echo "... rover_msgs_genpy"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... test"

@@ -66,6 +66,7 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/RouterAngle.lisp
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Battery_level.lisp
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/MPU.lisp
+rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/gripper.lisp
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Arm.lisp
 
 
@@ -136,9 +137,14 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp: /home/akshitk/Documents
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from rover_msgs/MPU.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg
 
+/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/gripper.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/gripper.lisp: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from rover_msgs/gripper.msg"
+	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg
+
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Arm.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Arm.lisp: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from rover_msgs/Arm.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Lisp code from rover_msgs/Arm.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg
 
 rover_msgs_generate_messages_lisp: rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp
@@ -155,6 +161,7 @@ rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_contro
 rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/RouterAngle.lisp
 rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Battery_level.lisp
 rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/MPU.lisp
+rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/gripper.lisp
 rover_msgs_generate_messages_lisp: /home/akshitk/Documents/ID4100/gripper_control/devel/share/common-lisp/ros/rover_msgs/msg/Arm.lisp
 rover_msgs_generate_messages_lisp: rover_msgs/CMakeFiles/rover_msgs_generate_messages_lisp.dir/build.make
 

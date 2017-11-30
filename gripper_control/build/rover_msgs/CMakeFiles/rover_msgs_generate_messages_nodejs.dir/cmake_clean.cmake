@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/RouterAngle.js"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Battery_level.js"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/MPU.js"
+  "/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/gripper.js"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Arm.js"
 )
 

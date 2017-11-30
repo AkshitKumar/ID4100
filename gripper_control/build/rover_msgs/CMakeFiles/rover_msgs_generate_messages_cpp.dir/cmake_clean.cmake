@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/RouterAngle.h"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Battery_level.h"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/MPU.h"
+  "/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/gripper.h"
   "/home/akshitk/Documents/ID4100/gripper_control/devel/include/rover_msgs/Arm.h"
 )
 

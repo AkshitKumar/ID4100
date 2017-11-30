@@ -66,6 +66,7 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documen
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/RouterAngle.js
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Battery_level.js
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/MPU.js
+rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/gripper.js
 rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Arm.js
 
 
@@ -136,9 +137,14 @@ rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs: /home/akshitk/Documen
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Javascript code from rover_msgs/MPU.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/MPU.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg
 
+/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/gripper.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/gripper.js: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Javascript code from rover_msgs/gripper.msg"
+	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg
+
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Arm.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Arm.js: /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Javascript code from rover_msgs/Arm.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/akshitk/Documents/ID4100/gripper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Javascript code from rover_msgs/Arm.msg"
 	cd /home/akshitk/Documents/ID4100/gripper_control/build/rover_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg -Irover_msgs:/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -p rover_msgs -o /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg
 
 rover_msgs_generate_messages_nodejs: rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs
@@ -155,6 +161,7 @@ rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_cont
 rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/RouterAngle.js
 rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Battery_level.js
 rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/MPU.js
+rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/gripper.js
 rover_msgs_generate_messages_nodejs: /home/akshitk/Documents/ID4100/gripper_control/devel/share/gennodejs/ros/rover_msgs/msg/Arm.js
 rover_msgs_generate_messages_nodejs: rover_msgs/CMakeFiles/rover_msgs_generate_messages_nodejs.dir/build.make
 

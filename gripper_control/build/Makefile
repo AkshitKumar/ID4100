@@ -374,19 +374,6 @@ geometry_msgs_generate_messages_nodejs/fast:
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named _rover_msgs_generate_messages_check_deps_ArmAngle
-
-# Build rule for target.
-_rover_msgs_generate_messages_check_deps_ArmAngle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _rover_msgs_generate_messages_check_deps_ArmAngle
-.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle
-
-# fast build rule for target.
-_rover_msgs_generate_messages_check_deps_ArmAngle/fast:
-	$(MAKE) -f rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build.make rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build
-.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -398,6 +385,19 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 std_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make rover_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _rover_msgs_generate_messages_check_deps_ArmAngle
+
+# Build rule for target.
+_rover_msgs_generate_messages_check_deps_ArmAngle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rover_msgs_generate_messages_check_deps_ArmAngle
+.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle
+
+# fast build rule for target.
+_rover_msgs_generate_messages_check_deps_ArmAngle/fast:
+	$(MAKE) -f rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build.make rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_ArmAngle.dir/build
+.PHONY : _rover_msgs_generate_messages_check_deps_ArmAngle/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
@@ -673,6 +673,19 @@ _rover_msgs_generate_messages_check_deps_MPU/fast:
 .PHONY : _rover_msgs_generate_messages_check_deps_MPU/fast
 
 #=============================================================================
+# Target rules for targets named _rover_msgs_generate_messages_check_deps_gripper
+
+# Build rule for target.
+_rover_msgs_generate_messages_check_deps_gripper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rover_msgs_generate_messages_check_deps_gripper
+.PHONY : _rover_msgs_generate_messages_check_deps_gripper
+
+# fast build rule for target.
+_rover_msgs_generate_messages_check_deps_gripper/fast:
+	$(MAKE) -f rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/build.make rover_msgs/CMakeFiles/_rover_msgs_generate_messages_check_deps_gripper.dir/build
+.PHONY : _rover_msgs_generate_messages_check_deps_gripper/fast
+
+#=============================================================================
 # Target rules for targets named rover_msgs_gencpp
 
 # Build rule for target.
@@ -935,8 +948,8 @@ help:
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... _rover_msgs_generate_messages_check_deps_ArmAngle"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... _rover_msgs_generate_messages_check_deps_ArmAngle"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rover_msgs_generate_messages"
 	@echo "... rover_msgs_generate_messages_lisp"
@@ -958,6 +971,7 @@ help:
 	@echo "... _rover_msgs_generate_messages_check_deps_WheelVelPower"
 	@echo "... rover_msgs_generate_messages_nodejs"
 	@echo "... _rover_msgs_generate_messages_check_deps_MPU"
+	@echo "... _rover_msgs_generate_messages_check_deps_gripper"
 	@echo "... rover_msgs_gencpp"
 	@echo "... rover_msgs_generate_messages_eus"
 	@echo "... rover_msgs_genlisp"

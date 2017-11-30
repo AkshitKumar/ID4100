@@ -48,6 +48,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/RouterAngle.msg"
     "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/digger.msg"
     "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/Arm.msg"
+    "/home/akshitk/Documents/ID4100/gripper_control/src/rover_msgs/msg/gripper.msg"
     )
 endif()
 
