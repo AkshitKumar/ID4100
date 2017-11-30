@@ -60,7 +60,6 @@ uint32_t min(uint32_t x , uint32_t y){
 void analogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255) {
   // calculate duty, 8191 from 2 ^ 13 - 1
   uint32_t duty = (8191 / valueMax) * min(value, valueMax);
-
   // write duty to LEDC
   ledcWrite(channel, duty);
 }
@@ -70,10 +69,12 @@ void gripperCallback(const rover_msgs::WheelVelocity& gripperVel){
     
     if(gripperVel.left <= 0){
       digitalWrite(18, LOW);
+      digitalWrite(16, HIGH);
       analogWrite(LEDC_CHANNEL_0, abs(gripperVel.left));
     }
     else{
       digitalWrite(18, HIGH);
+      digitalWrite(16, LOW);
       analogWrite(LEDC_CHANNEL_0, abs(gripperVel.left));
     }
     
@@ -92,6 +93,7 @@ void setup() {
 
   pinMode(18, OUTPUT);
   pinMode(17, OUTPUT);
+  pinMode(16, OUTPUT);
   //pinMode(pwn_pin, OUTPUT);
 
   ledcSetup(LEDC_CHANNEL_0, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT);
