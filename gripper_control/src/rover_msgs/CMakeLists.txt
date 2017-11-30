@@ -61,6 +61,7 @@ add_message_files(
    RouterAngle.msg
    digger.msg
    Arm.msg
+   gripper.msg
  )
 
 ## Generate services in the 'srv' folder
