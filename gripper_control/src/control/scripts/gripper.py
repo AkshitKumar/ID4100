@@ -13,7 +13,15 @@ pub=rospy.Publisher("gripper", gripper , queue_size=10)
 
 def callback(msg):
 	#gripper_value.left=40*msg.axes[1]
-	gripper_value.primary_act=40*msg.axes[1]
+	if(msg.axes[1] != 0):
+		gripper_value.primary_act=250*msg.axes[1]
+		gripper_value.secondary_act = 180 * msg.axes[1]
+	elif(msg.axes[3] != 0):
+		gripper_value.primary_act= 0
+		gripper_value.secondary_act = 180 * msg.axes[3] 
+	else:
+		gripper_value.primary_act = 0
+		gripper_value.secondary_act = 0
 	pub.publish(gripper_value)
 
 
