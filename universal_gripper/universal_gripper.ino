@@ -3,10 +3,10 @@
 #include <std_msgs/String.h>
 #include <rover_msgs/gripper.h>
 
-// #define dir_pin 7
 
 // use first channel of 16 channels (started from zero)
 #define LEDC_CHANNEL_0     0
+#define LEDC_CHANNEL_1     1
 
 // use 13 bit precission for LEDC timer
 #define LEDC_TIMER_13_BIT  13
@@ -15,6 +15,7 @@
 #define LEDC_BASE_FREQ     5000
 
 #define LED_PIN            5
+#define LED_PIN_2          4
 
 const char* ssid = "UniversalGripper";
 const char* password = "";
@@ -60,6 +61,7 @@ void analogWrite(uint8_t channel, uint32_t value, uint32_t valueMax = 255) {
 }
 
 void gripperCallback(const rover_msgs::gripper& grip){
+  /*
   if(grip.primary_act <= 0){
     digitalWrite(18, HIGH);
     analogWrite(LEDC_CHANNEL_0, abs(grip.primary_act));
@@ -68,6 +70,58 @@ void gripperCallback(const rover_msgs::gripper& grip){
     digitalWrite(18, LOW);
     analogWrite(LEDC_CHANNEL_0, abs(grip.primary_act));
   }
+  */
+  
+  if(grip.primary_act <= 0){
+    digitalWrite(2,HIGH);
+    analogWrite(LEDC_CHANNEL_0, abs(grip.primary_act));
+    if(grip.secondary_act > 0){
+      digitalWrite(18,HIGH);
+      analogWrite(LEDC_CHANNEL_1, abs(grip.secondary_act));
+      //analogWrite(LEDC_CHANNEL_1, 255);
+     
+     // digitalWrite(4,HIGH);
+     // digitalWrite(2,LOW);
+    }
+    else if(grip.secondary_act < 0){
+      digitalWrite(18,LOW);
+      analogWrite(LEDC_CHANNEL_1, abs(grip.secondary_act));
+      //analogWrite(LEDC_CHANNEL_1, 255);
+     
+    }
+    else {
+      digitalWrite(18,LOW);
+      analogWrite(LEDC_CHANNEL_1, abs(grip.secondary_act));
+      //analogWrite(LEDC_CHANNEL_1, 0);
+     
+    }
+  }
+  else{
+    digitalWrite(2,LOW);
+    analogWrite(LEDC_CHANNEL_0, abs(grip.primary_act));
+    if(grip.secondary_act > 0){
+      digitalWrite(18,HIGH);
+      analogWrite(LEDC_CHANNEL_1, abs(grip.secondary_act));
+      //analogWrite(LEDC_CHANNEL_1, 255);
+     
+     // digitalWrite(4,HIGH);
+     // digitalWrite(2,LOW);
+    }
+    else if(grip.secondary_act < 0){
+      digitalWrite(18,LOW);
+      analogWrite(LEDC_CHANNEL_1, abs(grip.secondary_act));
+      //analogWrite(LEDC_CHANNEL_1, 255);
+     
+    }
+    else {
+      digitalWrite(18,LOW);
+      analogWrite(LEDC_CHANNEL_1, abs(grip.secondary_act));
+      //analogWrite(LEDC_CHANNEL_1, 0);
+     
+    }
+  }
+ 
+ 
 }
 
 ros::Subscriber<rover_msgs::gripper> gripper_control("gripper", &gripperCallback);
@@ -80,11 +134,16 @@ void setup() {
   nh.subscribe(gripper_control);
   pinMode(18, OUTPUT);
   pinMode(17, OUTPUT);
-  // pinMode(16, OUTPUT);
-  
+  pinMode(16, OUTPUT);
+  pinMode(2, OUTPUT);
   ledcSetup(LEDC_CHANNEL_0, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT);
   ledcAttachPin(LED_PIN, LEDC_CHANNEL_0);
-  digitalWrite(17,HIGH); // Set the Sleep of the Pololu Motor Driver to HIGH
+  
+  ledcSetup(LEDC_CHANNEL_1, LEDC_BASE_FREQ, LEDC_TIMER_13_BIT);
+  ledcAttachPin(LED_PIN_2, LEDC_CHANNEL_1);
+  
+  digitalWrite(17,HIGH); // Set the Sleep of the primary pololu motor driver to HIGH
+  digitalWrite(16,HIGH); // Set the Sleep of the secondary pololu motor driver to HIGH
 }
 
 void loop() {
