@@ -1,2 +1,3 @@
 float64 primary_act
 float64 secondary_act
+int32 mode
